@@ -1,4 +1,4 @@
-class spi_env extends uvm_env;
+class dxi_env extends uvm_env;
 
     function void build_phase();
         $display("build_phase() %t", $time);

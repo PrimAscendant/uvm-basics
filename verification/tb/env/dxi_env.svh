@@ -12,9 +12,9 @@ class dxi_env extends uvm_env;
         $display("end_of_elaboration_phase() %t", $time);
     endfunction
 
-    function void run_phase(uvm_phase phase);
+    task run_phase(uvm_phase phase);
         $display("run_phase() %t", $time);
-    endfunction
+    endtask
 
     function void extract_phase(uvm_phase phase);
         $display("extract_phase() %t", $time);

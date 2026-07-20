@@ -1,5 +1,9 @@
 class dxi_env extends uvm_env;
 
+    function new(string name, uvm_component parent);
+        super.new(name, parent);
+    endfunction
+
     function void build_phase(uvm_phase phase);
         $display("build_phase() %t", $time);
     endfunction
